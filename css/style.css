@@ -231,6 +231,8 @@ header{
 .cards_contries{
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    margin-right: -1.9vw;
+    margin-left: -1.3vw;
 }
 
 .card_country{
@@ -238,7 +240,19 @@ header{
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: relative;
+    margin: 15px;
+    transition: all .3s;
 }
+
+
+
+/* .card_country:nth-child(3n){
+    margin-right: 0px;
+}
+
+.card_country:nth-child(n-3){
+    margin-left: 0px;
+} */
 
 .title_two{
     margin-top: 4vw;
@@ -270,10 +284,31 @@ header{
     display: flex;
     align-items: flex-end;
 }
+
+
+.img_done__card_country{
+    visibility: hidden;
+}
+
 .des_head__card_country {
     font-size: 12px;
+    padding-top: 0.8vw;
+    padding-bottom: 1.5vw;
 }
+
+.b_head_card_country{
+    margin-bottom: 1vw;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    transition: border-bottom-color .3s;
+}
+
 .text_price_card_country {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
 }
 .price_card_country {
+    font-size: 13px;
 }
+

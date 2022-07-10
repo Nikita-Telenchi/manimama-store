@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <script src="/script.js"></script>
+        <script src="/script.js" defer></script>
     </head> 
     <body>
         <header>
@@ -65,16 +65,117 @@
                 </section>
                 <div class="title_major title_two">Выберите <span>юрисдикцию</span></div>
                 <section class="cards_contries">
-                    <div class="card_country">
+                    <div class="card_country" onclick="onclick_card(this)" id="0" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
                         <img class="img_weightly__card_country" src="/img/seychelles.jpg" alt="">
                         <div class="content__card_country">
-                            <div class="head_card_country"> <div class="title_head__card_country"><span>Сейшелы</span></div> <img src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
-                            <div class="des_head__card_country">Лицензия дилера ценных бумаг</div>
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Сейшелы</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия дилера ценных бумаг</div>
+                            </div> 
                             <div class="text_price_card_country">Цена:</div>
                             <div class="price_card_country">30,000€</div>
                         </div>
                     </div>
-                    
+                    <div class="card_country"  onclick="onclick_card(this)" id="1" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/mauritius.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Маврикий</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия инвестиционного дилера</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">40,000€</div>
+                        </div>
+                    </div>
+                    <div class="card_country"  onclick="onclick_card(this)" id="2" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/labuan.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Лабуан</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия на брокерские услуги</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">30,000€</div>
+                        </div>
+                    </div>
+                    <div class="card_country" onclick="onclick_card(this)" id="3" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/vanuatu.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Вануату</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия дилера ценных бумаг</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">25,000€</div>
+                        </div>
+                    </div>
+                    <div class="card_country" onclick="onclick_card(this)" id="4" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/comoros.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Коморы</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия международной брокерской и клиринговой палаты</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">50,000€</div>
+                        </div>
+                    </div>
+                    <div class="card_country" onclick="onclick_card(this)" id="5" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/dubai.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Дубай</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия DIFC категории 3A</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">300,000€</div>
+                        </div>
+                    </div>
+                    <div class="card_country" onclick="onclick_card(this)" id="6" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/kenya.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Кения</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия форекс-брокера (лицензия валютного онлайн-брокера)</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">40,000€</div>
+                        </div>
+                    </div>
+                    <div class="card_country" onclick="onclick_card(this)" id="7" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/southafrica.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Южная Африка</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия поставщика финансовых услуг</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">50,000€</div>
+                        </div>
+                    </div>
+                    <div class="card_country" onclick="onclick_card(this)" id="8" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/cayman.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Каймановы Острова</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия на деятельность по инвестированию в ценные бумаги (SIBL)</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">40,000€</div>
+                        </div>
+                    </div>
+                    <div class="card_country" onclick="onclick_card(this)" id="9" onmouseenter="onmenter_card(this)" onmouseleave="onmleave_card(this)">
+                        <img class="img_weightly__card_country" src="/img/bermuda.jpg" alt="">
+                        <div class="content__card_country">
+                            <div class="b_head_card_country">
+                                <div class="head_card_country"> <div class="title_head__card_country"><span>Бермудские острова</span></div> <img class="img_done__card_country" src="/img/9104218_done_verified_check_complete_accept_icon.svg" alt=""></div>
+                                <div class="des_head__card_country">Лицензия на инвестиционный бизнес</div>
+                            </div> 
+                            <div class="text_price_card_country">Цена:</div>
+                            <div class="price_card_country">50,000€</div>
+                        </div>
+                    </div>
+                   
                 </section>
             </section>
         </main>
