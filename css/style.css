@@ -7,6 +7,7 @@
 body{
     margin: 0px;
     font-family: 'Roboto';
+    background-color: #F3F4F6;
 }
 
 header{
@@ -313,3 +314,128 @@ header{
     font-size: 13px;
 }
 
+/* -------------Table------------------------ */
+
+.table{
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 4vw;
+}
+
+.table th, .table td{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+   
+}
+
+.table th{
+    border-left: 0px;
+}
+
+.table td{
+    border-right: 0px;
+}
+
+#left_up_cell{
+    color: white;
+    user-select: none;
+    border-left: 0px;
+    border-top: 0px;
+     border-top-right-radius: 8px;
+}
+
+#right_up_cell{
+    border-right: 0px;
+    border-top: 0px;
+    border-right: 8px;
+    border-top-right-radius: 8px;
+    background-color: #226679;
+    color: white;
+}
+
+#cell_0, #cell_1, #cell_2, #cell_3, #cell_4, #cell_5{
+    background-color: #E5E7EB;
+    color: #6B7280;
+} 
+
+#cell_last_th, #cell_5{
+    border-bottom: 0px;
+}
+/* -------------------Card-Jurisdictions--------------------------------------------------- */
+
+.cards_jurisdictions{
+    display: flex;
+    margin-bottom: 4vw;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+.cards_jurisdictions::-webkit-scrollbar{
+    height: 10px;
+}
+
+.cards_jurisdictions::-webkit-scrollbar-track{
+ background-color: #d3d7df;
+ border-radius: 5px;
+}
+
+
+.cards_jurisdictions::-webkit-scrollbar-thumb{
+    background-color: #A8D1DD;
+    border-radius: 5px;
+}
+
+.card_juri{
+    background-color: white;
+    border-radius: 8px;
+    height: 458px;
+    box-shadow: 0 0px 6px -1px rgb(0 0 0/0.1),0 0px 4px -2px rgb(0 0 0/0.1);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.card_juri img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 224px;
+}
+
+.content__card_juri{
+    padding: 20px 24px;
+}
+
+.title__card_juri{
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.des__card_juri{
+    font-size: 13px;
+    color: rgb(107 114 128);
+}
+
+.b-time__card_juri{
+    margin-top: 20px;
+}
+
+.time__card_juri{
+    font-size: 12px;
+    background-color: #E0F2FE;
+    color: #79818F;
+    padding: 8px 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.time__card_juri img{
+    height: 20px;
+    width: 20px;
+}
