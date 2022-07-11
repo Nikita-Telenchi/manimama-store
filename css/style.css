@@ -9,9 +9,26 @@ body{
     margin: 0px;
     font-family: 'Roboto';
     background-color: #F3F4F6;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: var(--brand_dark_color);
+    border-radius: 5px;
 }
 
 header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -21,6 +38,8 @@ header{
     font-weight: 700;
     color: var(--brand_dark_color);
     user-select: none;
+    position: fixed;
+    z-index: 10;
 }
 
 .b-logo{
@@ -41,11 +60,17 @@ header{
 
 .ul-header > li{
     padding: 8px 16px;
-    border-radius: 12px;
     border: 2px solid white;
     transition: all .3s;
     cursor: pointer;
+   
 }
+
+.ul-header > li > span{
+    border: 1px solid white;
+    transition: border-bottom .3s  linear;
+}
+
 
 .ul-header > li:not(:last-child){
     margin-right: 2vw;
@@ -54,12 +79,14 @@ header{
 
 
 
-.ul-header > li:hover:not(.select-li-header){
-    background-color: #A8D1DD;
+.ul-header > li > span:hover:not(.select-li-header){
+    /* background-color: #A8D1DD; */
+    border-bottom: 1px solid #25acd2;
 }
 
 .select-li-header{
     color: #ffffff;
+    border-radius: 12px;
     background-color: var(--brand_dark_color);
 }
 
@@ -75,6 +102,7 @@ header{
 .langs-submit{
     display: flex;
     align-items: center;
+    margin-right: 1vw;
 }
 
 .btn-header{
@@ -556,10 +584,19 @@ footer{
     font-weight: 400;
 }
 
-.main_info__footer p:hover{
+
+.main_info__footer p > span{
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: color .3;
+    transition: border-bottom .3s linear; 
+}
+
+.main_info__footer p > span:hover{
     color: white;
     cursor: pointer;
+    border-bottom: 1px solid white;
 }
+/*  #25acd2 */
 
 .b_company__footer{
     color: #e8ebf1;
@@ -590,8 +627,33 @@ footer{
     padding: 8px 16px;
     border-radius: 8px;
     border: none;
+    display: flex;
+    align-items: center;
+    transition: background-color .3s ease;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn_footer:hover{
+    background-color: #25acd2;
+}
+
+.btn_footer img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
 }
 
 .b_contacts__footer img{
     height: 48px;
 }
+
+.btn_footer2 img{
+    width: 24px;
+    height: 24px;
+}
+
+.btn_footer2{
+    margin-bottom: 1vw;
+
+} 
