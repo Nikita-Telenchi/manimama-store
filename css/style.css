@@ -2,6 +2,7 @@
 
 :root{
     --color-yellow: #FACC15;
+    --brand_dark_color: #226679;
 }
 
 body{
@@ -18,7 +19,7 @@ header{
     padding: 5px;
     font-size: 14px;
     font-weight: 700;
-    color: #226679;
+    color: var(--brand_dark_color);
     user-select: none;
 }
 
@@ -59,7 +60,7 @@ header{
 
 .select-li-header{
     color: #ffffff;
-    background-color: #226679;
+    background-color: var(--brand_dark_color);
 }
 
 .logo-menu{
@@ -77,7 +78,7 @@ header{
 }
 
 .btn-header{
-    background-color: #226679;
+    background-color: var(--brand_dark_color);
     color: white;
     border-radius: 8px;
     padding: 10px 20px;
@@ -101,7 +102,7 @@ header{
 
 .btn-header:hover{
    background-color: #A8D1DD;
-   color: #226679;
+   color: var(--brand_dark_color);
 }
 
 .cover{
@@ -171,7 +172,7 @@ header{
 }
 
 .up_part__card_first{
-    background-color: #226679;
+    background-color: var(--brand_dark_color);
     color: white;
 }
 
@@ -182,6 +183,11 @@ header{
 
 .title_major span{
     color: var(--color-yellow);
+}
+
+.title_major_span{
+    text-decoration: underline;
+    text-decoration-color: var(--color-yellow);
 }
 
 .up_part__card_first{
@@ -352,7 +358,7 @@ header{
     border-top: 0px;
     border-right: 8px;
     border-top-right-radius: 8px;
-    background-color: #226679;
+    background-color: var(--brand_dark_color);
     color: white;
 }
 
@@ -438,4 +444,154 @@ header{
 .time__card_juri img{
     height: 20px;
     width: 20px;
+    margin-right: 5px;
+}
+
+/* ---------------How_it_works-------------------------- */
+
+.how_it_works{
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 4vw;
+   
+}
+
+.title_how_it_works{
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    font-size: 20px;
+}
+
+.content__how_it_works{
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: 6% 79% 15%;
+}
+
+.b_img__how_it_works{
+   
+}
+
+.b_img__how_it_works img{
+    height: 36px;
+    width: 36px;
+}
+
+.b_content__how_it_works{
+    display: flex;
+    align-items: center;
+}
+
+.b_content__how_it_works img{
+    width: 24px;
+    height: 24px;
+}
+
+
+.brand_600_style{
+    font-size: 18px;
+    color: var(--brand_dark_color);
+    font-weight: 600;
+}
+
+.b_ine__how_it_works{
+    height: 100%;
+}
+
+.line__how_it_works{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 2px;
+    margin-left: 18px;
+}
+
+.text__how_it_works{
+    font-size: 15px;
+    font-weight: 300;
+    color: #374151;
+}
+
+.title_mini__text__how_it_works{
+    font-weight: 600;
+}
+
+.addition_small_text__text__how_it_works{
+    font-size: 12px;
+    color: #717883;
+}
+
+.last_content__how_it_works{
+    padding: 1.5vw;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.hr1{
+    margin-top: 2vw;
+    margin-bottom: 0px;
+}
+
+/* -----------------Footer----------------------------------- */
+
+footer{
+    background-color: var(--brand_dark_color);
+    color: #DCE3EF;
+    padding: 4vw;
+    font-size: 15px;
+}
+
+.main_info__footer{
+    display: grid;
+    grid-template-columns: 20% 20% 35% 20%;
+}
+
+.tittle_mini__footer{
+    margin: 2vw 0px;
+    color: #BCC3CF;
+    font-weight: 400;
+}
+
+.main_info__footer p:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.b_company__footer{
+    color: #e8ebf1;
+    
+    font-size: 14px;
+    padding-right: 2vw;
+}
+
+.title_head_company__footer{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.text_head_company__footer{
+  
+
+}
+
+.des_company_footer{
+    margin-bottom: 1vw;
+}
+
+.btn_footer{
+    color: white;
+    font-weight: 600;
+    background-color: #1f89a6;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.b_contacts__footer img{
+    height: 48px;
 }
