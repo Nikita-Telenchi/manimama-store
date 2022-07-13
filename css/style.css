@@ -3,6 +3,7 @@
 :root{
     --color-yellow: #FACC15;
     --brand_dark_color: #226679;
+    --blue-light-color: #25acd2;
 }
 
 body{
@@ -12,6 +13,7 @@ body{
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+   
 }
 body::-webkit-scrollbar{
     width: 15px;
@@ -25,6 +27,11 @@ body::-webkit-scrollbar-thumb{
     width: 5px;
     background-color: var(--brand_dark_color);
     border-radius: 5px;
+}
+
+main{
+    width: 100%;
+   
 }
 
 header{
@@ -81,7 +88,7 @@ header{
 
 .ul-header > li > span:hover:not(.select-li-header){
     /* background-color: #A8D1DD; */
-    border-bottom: 1px solid #25acd2;
+    border-bottom: 1px solid var(--blue-light-color);
 }
 
 .select-li-header{
@@ -134,6 +141,7 @@ header{
 }
 
 .cover{
+    width: 100%;
     position: relative;
     background: url('/img/wallstreet.jpg');
     background-size: cover;
@@ -142,12 +150,14 @@ header{
     justify-content: flex-start;
     align-items: center;
     z-index: 1;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .content__cover{
     padding: 12vw 0px;
     z-index: 1;
-    margin-left: 5vw;
+    margin-left: 6vw;
     font-size: 30px;
     font-weight: 100;
 }
@@ -183,8 +193,19 @@ header{
 
 /* -----------------Main-Section------------------------------ */
 .main_information{
+   
+    display: grid;
+    margin: 0px;
+    grid-template-columns: 65% 35%;
+}
+
+.innner_main_information{
     margin-left: 6vw;
-    width: 60vw;
+}
+
+.secondary_information{
+    margin-left: 2vw;
+    margin-right: 4vw;
 }
 
 /* ---------------Card-First---------------------------------- */
@@ -571,10 +592,12 @@ header{
 /* -----------------Footer----------------------------------- */
 
 footer{
+   
     background-color: var(--brand_dark_color);
     color: #DCE3EF;
     padding: 4vw;
     font-size: 15px;
+    position: relative;
 }
 
 .main_info__footer{
@@ -600,7 +623,7 @@ footer{
     cursor: pointer;
     border-bottom: 1px solid white;
 }
-/*  #25acd2 */
+/*  --blue-light-color */
 
 .b_company__footer{
     color: #e8ebf1;
@@ -639,7 +662,7 @@ footer{
 }
 
 .btn_footer:hover{
-    background-color: #25acd2;
+    background-color: var(--blue-light-color);
 }
 
 .btn_footer img{
@@ -661,3 +684,172 @@ footer{
     margin-bottom: 1vw;
 
 } 
+
+/*------------------Cards-Prices-Juri------------------------------------ */
+
+.cards_prices_juri {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 4vw;
+    
+}
+.card_prices_juri {
+    margin: 10px;
+}
+
+.card_prices_juri:hover {
+    background-color: var(--blue-light-color);
+    color: white;
+}
+
+
+
+#img__card_prices_juri{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.content__cards_prices_juri {
+    padding: 1.5vw;
+   
+}
+
+.content__cards_prices_juri2{
+    padding: 1.5vw;
+    margin-bottom: 1vw;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    transition: border-bottom-color .3s;
+} 
+.title__content__cards_prices_juri {
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+.des__content__cards_prices_juri {
+    font-size: 12.5px;
+}
+
+.b_radio_group__card_prices_juri {
+    display: flex;
+    flex-direction: column;
+}
+
+.label__card {
+    display: flex;
+    align-items: center;
+    transition: background-color .2s;
+    padding: 1vw;
+}
+
+.label__card:hover {
+    background-color: var(--color-yellow);
+}
+
+.input_card {
+    display: none;
+}
+.fake_input__card {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.fake_input__card::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    border: 5px solid purple;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .2s ;
+}
+
+.input_card:checked + .fake_input__card::before {
+    opacity: 1;
+}
+
+.b_content_radio_group__card_prices_juri {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: black;
+}
+
+
+.text__card {
+    font-weight: 500;
+}
+.des__card {
+}
+
+#label__card2{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#label__card3{
+    border-bottom-right-radius:  8px;
+    border-bottom-left-radius:  8px;
+}
+
+.b_down_part_content__card_prices_juri{
+    padding-left: 1.5vw;
+}
+
+/* -----------Total-Cost-------------------------------- */
+
+.total_cost_card {
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    padding: 1.5vw;
+    background-color: white;
+}
+
+.info__total_cost_card {
+    margin-bottom: 2vw;
+}
+.title_info__total_cost_card {
+    font-size: 15px;
+    font-weight: 500;
+}
+.des_info__total_cost_card {
+    font-size: 14;
+}
+#dtc{
+    margin-bottom: 1vw;
+}
+.total_text__total_cost_card {
+    margin-top: 2vw;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 0.5vw;
+}
+.view_money__total_cost_card {
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 21px;
+    background-color: #E0F2FE;
+    color: #0369A1;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+/* -----------------------Ready-Company---------------------------------------- */
+
+.last_des_und_title{
+    font-size: 14px;
+    margin: 1vw 0px;
+}
+
