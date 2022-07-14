@@ -145,18 +145,19 @@ function onclick_label(element){
         }
     }
     
-
-
-    // array_inputs.forEach(e => {
-       
-    // })
-
-    // if(element.style.backgroundColor == "rgba(0, 0, 0, 0)"){
-    //     element.style.backgroundColor = "#FACC15"
-    // }
-
 }
 
 
+function onclick_toggle_pill(elem){
+    let text_block_sharehoder = document.getElementById('text__how_it_works')
+    let text_block_sharehoder2 = document.getElementById('text__how_it_works2')
 
+    if(elem.checked){
+        text_block_sharehoder.style.display = "none"
+        text_block_sharehoder2.style.display = "block"
+    }else{
+        text_block_sharehoder2.style.display = "none"
+        text_block_sharehoder.style.display = "block"
+    }
+}
 

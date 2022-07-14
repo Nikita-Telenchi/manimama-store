@@ -219,6 +219,8 @@
                             <td id="cell_5">Местный офис на Сейшельских островах</td>
                        </tr>
                     </table>
+                    
+
                     <div class="title_major title_two">Входит в <span>стоимость</span></div>
                     <section class="cards_jurisdictions">
                         <div class="card_juri">
@@ -286,6 +288,15 @@
                     </section>
                     <div class="title_major title_two">Детальная <span>дорожная карта</span></div>
                     <section class="how_it_works">
+                        <div class="text_with_chexbox__how_it_works">
+                            <div class="container__text_with_chexbox__how_it_works">
+                                <div class="text__chexbox__how_it_works">Пайщик <span>частное лицо</span></div>
+                                <div class="toggle-pill-color" >
+                                    <input type="checkbox" id="pill3" name="check" onclick="onclick_toggle_pill(this)">
+                                    <label for="pill3"></label>
+                                  </div>
+                            </div>
+                        </div>
                         <div class="title_how_it_works">
                             Предположим, Вы сделаете предоплату завтра <span class="title_major_span"> 12.07.2022</span>
                         </div>
@@ -301,7 +312,7 @@
                             <div class="b_content__how_it_works brand_600_style"><span>Документы от Вас</span></div>
                             <div class="b_content__how_it_works "> <img src="/img/calendar_source 1ready.svg" alt=""><span>12.07.2022</span></div>
                             <div class="b_ine__how_it_works"><div class="line__how_it_works"> </div></div> 
-                            <div class="text__how_it_works">
+                            <div class="text__how_it_works" id="text__how_it_works">
                                 <span class="title_mini__text__how_it_works">От пайщика</span>
                                 <ul>
                                     <li>Копия главной сраницы паспорта, заверенная нотариусом;</li>
@@ -314,6 +325,23 @@
                                     <li>Описание планируемой бизнес-активности.</li>
                                 </ul>
                             </div>
+                            <div class="text__how_it_works" id="text__how_it_works2">
+                                <span class="title_mini__text__how_it_works">От компании, которая будет владеть паями</span>
+                                <ul>
+                                    <li>Уставные документы, включая те, где указаны члены правления и пайщики (заверенные нотариусом и переведенные присяжным переводчиком на английский язык);</li>
+                                    <li>Устав, заверенный нотариусом и переведенный присяжным переводчиком на английский язык.</li>
+                                </ul>
+                                <span class="title_mini__text__how_it_works">От члена правления компании, которая будет владеть паями, кто имеет право на полное представительство</span>
+                                <ul>
+                                    <li>Копия главной сраницы паспорта, заверенная нотариусом;</li>
+                                    <li>Доверенность, заверенная нотариусом и переведенная присяжным переводчиком на английский язык (мы предоставим Вам шаблон).</li>
+                                </ul> Другое
+                                <span class="title_mini__text__how_it_works">Другое</span>
+                                <ul>
+                                    <li>Описание планируемой бизнес-активности.</li>
+                                </ul>
+                               
+                            </div>  
                         </div>
                         <div class="content__how_it_works">
                             <div class="b_img__how_it_works"><img src="/img/tune_source 1ed.svg" alt=""></div>
@@ -594,8 +622,42 @@
                     <div class="title_major ">Готовые  <span>компании</span></div> 
                     <div class="last_des_und_title">Не хотите ждать? Купить готовую компанию уже с лицензией.</div> 
                     <div class="ready_company border_style">
-                        
+                        <div class="head_content__ready_company border_radius_up_8px">
+                            <div class="b_head__head_content__ready_company">
+                                <div class="b_text__head_content__ready_company">
+                                    <div class="title__b_text__head_content__ready_company">MobyM Fo Ltd <span>(Сейшелы, 2022)</span></div>
+                                    <div class="des__b_text__head_content__ready_company">Лицензия: #3-102-614622-24/2</div>
+                                </div> 
+                                <div class="view_money__b_text__head_content__ready_company"><span>250,000€</span></div>   
+                            </div>
+                            <div class="des_head_content__ready_company">Организация финансового процессинга, форекс, азартные игры, ставки на спорт</div>
+                        </div>
+                        <div class="body__ready_company body__ready_company1">
+                            <div class="left_content__body__ready_company">
+                                <div class="title_body__ready_company">Bitinterpay OÜ <span>(2018)</span></div>
+                                <div class="des__left_content__body__ready_company">Предоставление услуг виртуальных валют</div>
+                            </div>
+                            <div class="right_content__body__ready_company">
+                                <div class="view_money__b_text__head_content__ready_company view__right_content__body__ready_company"><span>150,000€</span></div>
+                                <div class="coment_view_right_content__body__ready_company">#FVT000343</div>  
+                            </div>
+                        </div>
+                        <div class="body__ready_company">
+                            <div class="left_content__body__ready_company">
+                                <div class="title_body__ready_company">ICBtransfer OÜ <span>(2020)</span></div>
+                                <div class="des__left_content__body__ready_company">Предоставление услуг виртуальных валют</div>
+                            </div>
+                            <div class="right_content__body__ready_company">
+                                <div class="view_money__b_text__head_content__ready_company view__right_content__body__ready_company"><span>150,000€</span></div>
+                                <div class="coment_view_right_content__body__ready_company">#FVT000056</div>  
+                            </div>
+                        </div>
                     </div>
+                    <div class="ready_consultations border_style">
+                        <div class="title_major title__ready_consultations">Вы готовы начать? <br> <span>Поговорить с юристом <br> <span class="big_text__title_major">СЕГОДНЯ</span></span></div> 
+                        <button class="btn_footer btn_footer2 btn_footer3 "> <img src="/img/chat_white.svg" alt=""> <span>Чат с юристом</span></button>
+                    </div>
+
                 </section>
             </section>
         </main>
