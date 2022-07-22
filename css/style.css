@@ -89,6 +89,16 @@ header{
 
 .ul-header > li > span:hover:not(.select-li-header){
     /* background-color: #A8D1DD; */
+    /* border-bottom: 1px solid var(--blue-light-color); */
+}
+
+.ul-header  a{
+    text-decoration: none;
+    color: var(--brand_dark_color);
+    border: 1px solid white;
+    transition: border-bottom .3s;
+}
+.ul-header  a:hover{
     border-bottom: 1px solid var(--blue-light-color);
 }
 
@@ -155,12 +165,26 @@ header{
     margin-left: 0px;
 }
 
+.cover2{
+    background: url('/img/earth.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
 .content__cover{
     padding: 12vw 0px;
     z-index: 1;
     margin-left: 6vw;
     font-size: 30px;
     font-weight: 100;
+    display: flex;
+    flex-direction: column;
 }
 
 .content__cover p{
@@ -177,6 +201,11 @@ header{
 
 .title__cover{
     font-size: 64px;
+    font-weight: 900;
+}
+
+.title__cover span{
+    color: var(--color-yellow);
     font-weight: 900;
 }
 
@@ -388,6 +417,11 @@ header{
 
 /* -------------Table------------------------ */
 
+
+#table{
+    
+}
+
 .table{
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
@@ -406,6 +440,8 @@ header{
 
 .table th{
     border-left: 0px;
+    font-weight: 500;
+    padding: 1vw;
 }
 
 .table td{
@@ -413,11 +449,13 @@ header{
 }
 
 #left_up_cell{
-    color: white;
+    color:  #F9FAFB;
     user-select: none;
     border-left: 0px;
     border-top: 0px;
-     border-top-right-radius: 8px;
+     border-top-left-radius: 8px;
+     background-color: #F9FAFB;
+
 }
 
 #right_up_cell{
@@ -440,6 +478,81 @@ header{
 #cell_5{
     border-bottom-right-radius: 8px;
 }
+/* -------------------------Tables-V2--------------------------------------------------- */
+
+.united_table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    height: 1500px;
+    display: none;
+}
+
+#table2{
+ display: block;
+}
+
+.checkbox_for_tables {
+    display: flex;
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+}
+.toggle-pill-color {
+}
+.text__checkbox_for_tables {
+    margin-left: 1vw;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.small_table__united_table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.small_table__united_table th{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    
+}
+
+.big_table__united_table{
+    padding: 1vw;
+    background-color: var(--brand_dark_color);
+    color: white;
+    overflow: auto;
+    width: 300px;
+}
+
+#big_table__united_table th{
+    height: 1500px;
+}
+
+.tr1__big_table__united_table{
+    width: 300px;
+}
+
+#th_a0,
+#th_a1,
+#th_a2,
+#th_a3,
+#th_a4,
+#th_a5,
+#th_a6,
+#th_a7,
+#th_a8,
+#th_a9 {
+    width: 200px;
+}
+
+.new_table__big_table__united_table{
+    width:40vw; 
+    height:1400px; 
+    overflow:auto;
+}
+
 /* -------------------Card-Jurisdictions--------------------------------------------------- */
 
 .cards_jurisdictions{
@@ -448,6 +561,7 @@ header{
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    user-select: none;
 
 }
 
@@ -630,8 +744,7 @@ header{
     display: none;
 }
 
-/* toggle-pill-color */
-.toggle-pill-color input[type="checkbox"] {
+.toggle-pill-color input[type="checkbox"]{
     display: none;
   }
   .toggle-pill-color input[type="checkbox"] + label {
@@ -668,6 +781,51 @@ header{
     background: #47cf73;
   }
   .toggle-pill-color input[type="checkbox"]:checked + label:before {
+    box-shadow: -2px 0px 1px rgba(0, 0, 0, 0.1);
+    left: 1.6em;
+  }
+  /* toggle-pill-color end */
+  
+
+
+/* toggle-pill-color */
+#pill {
+    display: none;
+  }
+  #pill + #label_pill {
+    display: block;
+    position: relative;
+    width: 3em;
+    height: 1.6em;
+    margin-right: 1vw;
+    border-radius: 1em;
+    background: var(--gray-border-color);
+    /* box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3); */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-transition: background 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out;
+  }
+  #pill + #label_pill:before {
+    content: "";
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 1em;
+    background: #fff;
+    box-shadow: 2px 0px 1px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0.2em;
+    top: 0.2em;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  #pill:checked + #label_pill {
+    background: #47cf73;
+  }
+  #pill:checked + #label_pill:before {
     box-shadow: -2px 0px 1px rgba(0, 0, 0, 0.1);
     left: 1.6em;
   }
@@ -1063,4 +1221,207 @@ opacity: 0.4;
 .btn_footer3:hover{
     background-color:  #5586f0;
 }
+
+
+.container_rc{
+ 
+}
+
+.element{
+    position: absolute;
+    user-select: none;
+    /* z-index: 0; */
+}
+
+.new_table{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background-color: #F3F4F6;
+    color: #6B7280;
+    font-size: 14px;
+    display: none;
+    grid-template-columns: 185px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+.new_table::-webkit-scrollbar{
+    height: 10px;
+}
+
+.new_table::-webkit-scrollbar-track{
+ background-color: #d3d7df;
+ border-radius: 5px;
+}
+
+
+.new_table::-webkit-scrollbar-thumb{
+    background-color: #A8D1DD;
+    border-radius: 5px;
+}
+
+.card__new_table{
+    border-bottom: 1px solid #D1D5DB;
+    padding: 1vw;
+
+}
+
+
+.card__new_table:nth-child(13){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(15){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(17){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(19){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(21){
+    background-color: #E5E7EB;
+}
+
+
+
+.card__new_table:nth-child(24){
+    background-color: #E5E7EB;
+}
+
+
+.card__new_table:nth-child(26){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(28){
+    background-color: #E5E7EB;
+}
+
+
+.card__new_table:nth-child(30){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(32){
+    background-color: #E5E7EB;
+}
+
+
+.card__new_table:nth-child(35){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(37){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(39){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(41){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(43){
+    background-color: #E5E7EB;
+}
+
+
+
+.card__new_table:nth-child(46){
+    background-color: #E5E7EB;
+}
+
+
+.card__new_table:nth-child(48){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(50){
+    background-color: #E5E7EB;
+}
+
+
+.card__new_table:nth-child(52){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(54){
+    background-color: #E5E7EB;
+}
+
+
+
+.card__new_table:nth-child(57){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(59){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(61){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(63){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(65){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(67){
+    background-color: #E5E7EB;
+}
+
+
+
+.card__new_table:nth-child(70){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(72){
+    background-color: #E5E7EB;
+}
+
+
+.card__new_table:nth-child(74){
+    background-color: #E5E7EB;
+}
+
+.card__new_table:nth-child(76){
+    background-color: #E5E7EB;
+}
+
+
+.head__card__new_table{
+    font-weight: 600;
+    color: white;
+    padding: 1vw;
+    background-color: var(--brand_dark_color);
+}
+
+.side_fixed_cell__new_table{
+    
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #D1D5DB;
+}
+
+.tl_cell{
+   background-color:  #F9FAFB;
+}
+
 

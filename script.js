@@ -161,3 +161,58 @@ function onclick_toggle_pill(elem){
     }
 }
 
+function onclick_toggle_pill2(element){
+    let table = document.getElementById('table')
+    let table2 = document.querySelector('.new_table')
+
+
+    if(element.checked){
+        table.style.display = "none"
+        table2.style.display = "grid"
+    }else {
+        table2.style.display = "none"
+        table.style.display = "table"
+    }
+}
+
+
+// Сперва создадим ссылку на этот элемент,
+// чтобы обрабатывать события на нём:
+const element = document.querySelector(".element")
+
+
+let dragging = false
+
+
+let startX = 0
+let startY = 0
+
+
+element.addEventListener("mousedown", (e) => {
+  dragging = true
+
+//   startX = e.pageX - Number.parseInt(element.style.left || 0)
+  startY = e.pageY - Number.parseInt(element.style.top || 0)
+
+})
+
+document.body.addEventListener("mousemove", (e) => {
+
+  if (!dragging) return
+  if( 250 <=  e.pageY-startY  && e.pageY-startY <= 2800){
+    element.style.top = `${e.pageY - startY}px`
+}
+
+//   element.style.top = `${e.pageY - startY}px`
+// if( 250 <=  e.pageX-startX  && e.pageX-startX <= 1200){
+//     element.style.left = `${e.pageX - startX -220}px`
+// }
+ 
+})
+
+document.body.addEventListener("mouseup", () => {
+  dragging = false
+})
+
+
+

@@ -4,7 +4,7 @@
    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
                     <ul class="ul-header">
                         <li><span>Крипто-лицензия в Эстонии</span></li>
                         <li><span>Крипто-лицензия в Литве</span></li>
-                        <li><a href="/ru/company.html"><span>Компания</span></a></li> 
-                        <li class="select-li-header">Форекс</li>
+                        <li class="select-li-header">Компания</li> 
+                        <li> <a href="/index.html"><span>Форекс</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,9 +30,58 @@
            
         </header>
         <main>
-            <section class="cover">
+            <section class="cover cover2">
                 <div class="content__cover">
-                    <div class="title__cover">Forex лицензия</div>
+                    <div class="title__cover title__cover2">
+                        Регистрация компании <br>
+                        <span class="sp">в Словакии</span>
+                        <span class="sp" style="display: none;">в Греции</span>
+                        <span class="sp" style="display: none;">в Германии</span>
+                        <span class="sp" style="display: none;">в Армении</span>
+                        <span class="sp" style="display: none;">в Швейцарии</span>
+                        <span class="sp" style="display: none;">в Литве</span>
+                        <span class="sp" style="display: none;">в Испании</span>
+                        <span class="sp" style="display: none;">в Латвии</span>
+                        <span class="sp" style="display: none;">в Италии</span>
+                        <span class="sp" style="display: none;">в Эстонии</span>
+                        <span class="sp" style="display: none;">в Финляндии</span>
+                        <span class="sp" style="display: none;">в Грузии</span>
+                        <span class="sp" style="display: none;">в Нидерландах</span>
+                        <span class="sp" style="display: none;">в Польше</span>
+                        <span class="sp" style="display: none;">в Черногории</span>
+                        <span class="sp" style="display: none;">в Чехии</span>
+                        <span class="sp" style="display: none;">в Дании</span>
+                        <span class="sp" style="display: none;">в Сербии</span>
+                        <span class="sp" style="display: none;">на Кипре</span>
+                        <span class="sp" style="display: none;">в Лихтенштейне</span>
+                        <span class="sp" style="display: none;">в Люксенбурге</span>
+                        <span class="sp" style="display: none;">на Мальте</span>
+                        <span class="sp" style="display: none;">в Бельгии</span>
+                        <span class="sp" style="display: none;">в Болгарии</span>
+                        <span class="sp" style="display: none;">в Швеции</span>
+                        <span class="sp" style="display: none;">в Австрии</span>
+                        <span class="sp" style="display: none;">в Португалии</span>
+                        <span class="sp" style="display: none;">в Словении</span>
+                        <span class="sp" style="display: none;">в Словении</span>
+                        <span class="sp" style="display: none;">в Боснии и Герцеговине</span>
+                        <span class="sp" style="display: none;">в Хорватии</span>
+                        <span class="sp" style="display: none;">в Северной Македонии</span>
+                    </div>
+                    <script>
+                        let array_spans = document.querySelectorAll('.sp');
+                        var i = 0;
+                       setInterval(() => {
+                        array_spans.forEach(el => {
+                            el.style.display = "none";
+                        })
+                        array_spans[i].style.display = "block";
+                        i++;
+                        if(i == array_spans.length - 1){
+                            i = 0;
+                        }
+                       }, 400);
+                    </script>
+                </div>
                     <p>Ежедневный объем торгов на мировом рынке Forex превышает <span><u>6.3€ триллионов</u></span>. Стоит побороться за кусок?</p>
                 </div>
                 <div class="overlay__cover"></div>
@@ -52,6 +101,7 @@
                         <img src="/img/bottom.svg" alt="">
                         <div class="down_part__card_first">
                             <div class="title_miny__card_first">Почему мы</div>
+                         
                             <div class="deses_down__card_first">
                                 <div class="des_down_left__card_first des_up__card_first">
                                     <p>Наша компания расположена в Эстонии и лицензирована <strong>лицензией на деятельность в сфере обслуживания трастовых фондов и компаний.</strong> Так что, по крайней мере, мы знаем что деаем.</p>
